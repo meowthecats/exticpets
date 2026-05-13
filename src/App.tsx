@@ -120,7 +120,7 @@ export default function App() {
               </div>
             </div>
             <div className="w-full md:w-1/3 aspect-square overflow-hidden rounded border border-slate-200 shadow-sm relative group bg-white">
-                <img src={petsData.find(p => p.id === 'gerbil')?.imageUrl} alt="Gerbil" className="object-cover w-full h-full grayscale-[20%] group-hover:grayscale-0 transition duration-500" />
+                <img src={petsData.find(p => p.id === 'gerbil')?.imageUrl} alt="Gerbil" referrerPolicy="no-referrer" className="object-cover w-full h-full grayscale-[20%] group-hover:grayscale-0 transition duration-500" />
             </div>
           </div>
         </div>
@@ -145,7 +145,7 @@ export default function App() {
                 <tr key={`${pet.id}-row`} className={`hover:bg-emerald-50/30 transition-colors bg-white`}>
                   <td className="p-3 text-xs font-bold text-slate-900 flex items-center space-x-3">
                     <div className="w-8 h-8 rounded bg-slate-200 overflow-hidden shrink-0">
-                      <img src={pet.imageUrl} alt={pet.name} className="w-full h-full object-cover" />
+                      <img src={pet.imageUrl} alt={pet.name} referrerPolicy="no-referrer" className="w-full h-full object-cover" />
                     </div>
                     <span>{pet.name}</span>
                   </td>
@@ -183,7 +183,7 @@ export default function App() {
               
               {/* Pet Image Area */}
               <div className="w-full lg:w-2/5 h-64 lg:h-auto border-b lg:border-b-0 lg:border-r border-slate-200 bg-slate-100 overflow-hidden relative">
-                <img src={pet.imageUrl} alt={pet.name} className="absolute inset-0 w-full h-full object-cover" />
+                <img src={pet.imageUrl} alt={pet.name} referrerPolicy="no-referrer" className="absolute inset-0 w-full h-full object-cover" />
                 <div className="absolute inset-x-0 bottom-0 bg-slate-900/80 p-4">
                   <h3 className="text-2xl font-bold text-white uppercase tracking-tight">{pet.name}</h3>
                   <p className="text-[10px] text-emerald-300 font-bold uppercase tracking-widest mt-1">
