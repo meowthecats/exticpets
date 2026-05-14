@@ -4,11 +4,17 @@
  */
 
 import React, { useState } from 'react';
-import { CheckCircle2, XCircle, Info, Clock, DollarSign, Activity, AlertTriangle, ShieldCheck, HeartPulse, ExternalLink, ChevronRight, Menu, X, ArrowUpCircle } from 'lucide-react';
+import { CheckCircle2, XCircle, Info, Clock, DollarSign, Activity, AlertTriangle, ShieldCheck, HeartPulse, ExternalLink, ChevronRight, Menu, X, ArrowUpCircle, Star } from 'lucide-react';
 import { petsData } from './data/pets';
+import { ComparisonChart } from './components/ComparisonChart';
 
 export default function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const filteredPets = petsData.filter(pet => 
+    pet.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   const scrollToID = (id: string) => {
     const el = document.getElementById(id);
@@ -65,15 +71,30 @@ export default function App() {
         {/* Mobile menu */}
         {mobileMenuOpen && (
           <div className="md:hidden bg-emerald-800 border-b-4 border-emerald-950 px-2 pt-2 pb-3 space-y-1 shadow-lg text-white">
-            {petsData.map(pet => (
-              <button
-                key={`mobilenav-${pet.id}`}
-                onClick={() => scrollToID(pet.id)}
-                className="block w-full text-left px-3 py-2 rounded-md text-base font-medium hover:text-emerald-200 hover:bg-emerald-900 transition-colors"
-              >
-                {pet.name}
-              </button>
-            ))}
+            <div className="px-3 pb-2 pt-1">
+              <input
+                type="text"
+                placeholder="Search pets..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full px-3 py-2 bg-emerald-900 border border-emerald-700 rounded-md text-white placeholder-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-sm"
+              />
+            </div>
+            {filteredPets.length > 0 ? (
+              filteredPets.map(pet => (
+                <button
+                  key={`mobilenav-${pet.id}`}
+                  onClick={() => scrollToID(pet.id)}
+                  className="block w-full text-left px-3 py-2 rounded-md text-base font-medium hover:text-emerald-200 hover:bg-emerald-900 transition-colors"
+                >
+                  {pet.name}
+                </button>
+              ))
+            ) : (
+              <div className="px-3 py-2 text-sm text-emerald-300 italic">
+                No pets found matching "{searchQuery}"
+              </div>
+            )}
           </div>
         )}
       </nav>
@@ -194,6 +215,12 @@ export default function App() {
 
               {/* Pet Info Area */}
               <div className="w-full lg:w-3/5 p-6 lg:p-8">
+                {pet.experienceLevel === 'Beginner' && (
+                  <div className="inline-flex items-center px-3 py-1.5 rounded-full bg-emerald-50 text-emerald-700 font-bold text-xs uppercase tracking-wider mb-5 border border-emerald-200 shadow-sm">
+                    <Star className="w-4 h-4 mr-2 fill-emerald-500 text-emerald-500" />
+                    Best Beginner
+                  </div>
+                )}
                 <p className="text-sm text-slate-600 mb-6 italic border-l-4 border-slate-200 pl-4 py-1 leading-relaxed">
                   "{pet.quickSummary}"
                 </p>
@@ -300,6 +327,19 @@ export default function App() {
             </div>
           </div>
         ))}
+      </section>
+
+      {/* Visual Comparison Chart */}
+      <section className="max-w-7xl mx-auto px-4 mt-24 mb-16">
+        <h2 className="text-3xl font-bold text-slate-900 mb-2 uppercase tracking-tighter">
+          Visual Comparison Chart
+        </h2>
+        <p className="text-slate-500 mb-8 max-w-2xl font-medium">
+          A visual summary of the key features of each pet, including lifespan, setup cost, and experience level.
+        </p>
+        <div className="bg-white border border-slate-200 rounded-lg shadow-sm p-6 lg:p-10">
+          <ComparisonChart petsData={petsData} />
+        </div>
       </section>
 
       {/* Floating back to top button */}
