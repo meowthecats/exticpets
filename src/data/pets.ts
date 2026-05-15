@@ -283,5 +283,38 @@ export const petsData: PetData[] = [
       { name: 'RSPCA - Degus', url: 'https://www.rspca.org.uk/adviceandwelfare/pets/rodents/degus' },
       { name: 'PDSA - Degu Care', url: 'https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/degus' }
     ]
+  },
+  {
+    id: 'schneiders-skink',
+    name: "Schneider's Skink",
+    scientificName: 'Eumeces schneideri',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/2/23/Schneiders_skink_001.jpg',
+    quickSummary: 'Friendly, active, and colorful lizards that are surprisingly interactive for a reptile.',
+    lifespan: '10 - 20 years',
+    setupCost: 'Medium',
+    experienceLevel: 'Intermediate',
+    interactionLevel: 'High',
+    pros: [
+      'Very docile and usually enjoy being handled',
+      'Active during the day (diurnal)',
+      'Hardier than many other available skink species',
+      'Beautiful orange and gold coloration'
+    ],
+    cons: [
+      'Require an arid setup with a thick layer of substrate for burrowing',
+      'Extremely fast when spooked; handling requires care initially',
+      'Relies heavily on live insects for their diet',
+      'Mostly wild-caught in the pet trade, often requiring immediate parasite treatment'
+    ],
+    careRequirements: {
+      housing: 'A 40-gallon breeder tank minimum. Requires a deep (4-6 inches) specialized sand-soil mix substrate for burrowing hideouts. Needs a basking spot of 95-105°F and a cooler end.',
+      diet: 'Primarily insectivores. Feed a variety of gut-loaded live insects (crickets, dubia roaches, mealworms).',
+      healthAndMaintenance: 'Needs UVB lighting to process calcium. Dust feeder insects with calcium supplements. Spot clean daily to remove feces and uneaten food.'
+    },
+    lifestyleSuitability: 'Excellent for people looking for a highly interactive and interesting reptile that is less demanding than a Bearded Dragon but more handleable than many geckos.',
+    reputableSources: [
+      { name: 'Dubia.com - Schneider’s Skink Care Sheet', url: 'https://dubia.com/blogs/lizard-care/schneider-s-skink-care-sheet' },
+      { name: 'ReptileSupply - How to care for a Schneider\'s Skink', url: 'https://reptilesupply.com/blogs/care-sheets/how-to-care-for-your-schneiders-skink' }
+    ]
   }
 ];

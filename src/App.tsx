@@ -35,12 +35,12 @@ export default function App() {
       <nav className="fixed w-full bg-emerald-800 text-white z-50 border-b-4 border-emerald-950 shrink-0 top-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex-shrink-0 flex items-center cursor-pointer gap-3" onClick={scrollToTop}>
+            <button className="flex-shrink-0 flex items-center cursor-pointer gap-3 p-1 rounded-md focus:outline-none focus:ring-2 focus:ring-white" onClick={scrollToTop}>
               <div className="w-8 h-8 bg-white rounded-md flex items-center justify-center">
                 <div className="w-4 h-4 border-2 border-emerald-800"></div>
               </div>
               <span className="font-bold text-xl tracking-tight uppercase">Exotic Pet Compass</span>
-            </div>
+            </button>
             
             {/* Desktop Quick Links */}
             <div className="hidden md:flex space-x-6 overflow-x-auto items-center">
@@ -117,7 +117,7 @@ export default function App() {
               <span className="text-[10px] font-black uppercase text-emerald-700 tracking-widest block mb-1">Top Recommendation</span>
               <h2 className="text-2xl md:text-3xl font-bold leading-tight mt-1 italic text-slate-900 mb-4">The Gerbil</h2>
               <p className="text-slate-600 mb-6 leading-relaxed text-sm">
-                While every pet requires dedication, the <strong><button onClick={() => scrollToID('gerbil')} className="text-emerald-700 underline font-semibold">Gerbil</button></strong> is widely considered the easiest on this list regarding <em>setup and environmental cost</em>. 
+                While every pet requires dedication, the <strong><button onClick={() => scrollToID('gerbil')} className="text-emerald-800 underline font-semibold focus:outline-none focus:ring-2 focus:ring-emerald-500 rounded p-0.5">Gerbil</button></strong> is widely considered the easiest on this list regarding <em>setup and environmental cost</em>. 
               </p>
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
@@ -134,8 +134,8 @@ export default function App() {
                 </div>
               </div>
               <div className="mt-6 p-4 bg-white border border-slate-200 rounded-lg">
-                <h3 className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Honorable Mention</h3>
-                <p className="text-[11px] leading-relaxed italic text-slate-500">
+                <h3 className="text-xs font-bold text-slate-600 uppercase tracking-widest mb-2">Honorable Mention</h3>
+                <p className="text-[11px] leading-relaxed italic text-slate-600">
                   "If you prefer reptiles, the Corn Snake is incredibly low-maintenance daily, but their initial heating setup requires strict precision."
                 </p>
               </div>
@@ -184,7 +184,7 @@ export default function App() {
                   <td className="p-3 text-slate-600 text-right">
                     <button 
                       onClick={() => scrollToID(pet.id)}
-                      className="text-emerald-700 hover:text-emerald-900 font-bold text-[10px] uppercase tracking-wider inline-flex items-center"
+                      className="text-emerald-800 hover:text-emerald-900 font-bold text-[10px] uppercase tracking-wider inline-flex items-center focus:outline-none focus:ring-2 focus:ring-emerald-500 rounded p-1"
                     >
                       View <ChevronRight className="w-3 h-3 ml-1" />
                     </button>
@@ -228,19 +228,19 @@ export default function App() {
                 {/* Badges */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
                     <div className="bg-slate-50 p-3 rounded border border-slate-200 flex flex-col justify-center">
-                      <span className="text-[10px] uppercase font-bold tracking-widest text-slate-400 mb-1">Lifespan</span>
+                      <span className="text-[10px] uppercase font-bold tracking-widest text-slate-600 mb-1">Lifespan</span>
                       <span className="font-bold text-slate-800 text-sm">{pet.lifespan}</span>
                     </div>
                     <div className="bg-slate-50 p-3 rounded border border-slate-200 flex flex-col justify-center">
-                      <span className="text-[10px] uppercase font-bold tracking-widest text-slate-400 mb-1">Setup Cost</span>
+                      <span className="text-[10px] uppercase font-bold tracking-widest text-slate-600 mb-1">Setup Cost</span>
                       <span className="font-bold text-slate-800 text-sm">{pet.setupCost}</span>
                     </div>
                     <div className="bg-slate-50 p-3 rounded border border-slate-200 flex flex-col justify-center">
-                      <span className="text-[10px] uppercase font-bold tracking-widest text-slate-400 mb-1">Skill Level</span>
+                      <span className="text-[10px] uppercase font-bold tracking-widest text-slate-600 mb-1">Skill Level</span>
                       <span className="font-bold text-slate-800 text-sm">{pet.experienceLevel}</span>
                     </div>
                     <div className="bg-slate-50 p-3 rounded border border-slate-200 flex flex-col justify-center">
-                      <span className="text-[10px] uppercase font-bold tracking-widest text-slate-400 mb-1">Interaction</span>
+                      <span className="text-[10px] uppercase font-bold tracking-widest text-slate-600 mb-1">Interaction</span>
                       <span className="font-bold text-slate-800 text-sm">{pet.interactionLevel}</span>
                     </div>
                 </div>
@@ -334,7 +334,7 @@ export default function App() {
         <h2 className="text-3xl font-bold text-slate-900 mb-2 uppercase tracking-tighter">
           Visual Comparison Chart
         </h2>
-        <p className="text-slate-500 mb-8 max-w-2xl font-medium">
+        <p className="text-slate-700 mb-8 max-w-2xl font-medium">
           A visual summary of the key features of each pet, including lifespan, setup cost, and experience level.
         </p>
         <div className="bg-white border border-slate-200 rounded-lg shadow-sm p-6 lg:p-10">
@@ -353,9 +353,9 @@ export default function App() {
 
       {/* Footer */}
       <footer className="mt-24 h-16 bg-slate-200 flex items-center px-4 md:px-8 justify-between shrink-0 border-t-2 border-slate-300">
-        <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest italic">Data Verified by Veterinary Sources 2024</span>
+        <span className="text-[10px] font-bold text-slate-700 uppercase tracking-widest italic">Data Verified by Veterinary Sources 2024</span>
         <div className="flex gap-4">
-           <span className="text-[10px] text-slate-400 font-bold uppercase tracking-widest">A-Z List: 01-{petsData.length < 10 ? `0${petsData.length}` : petsData.length}</span>
+           <span className="text-[10px] text-slate-600 font-bold uppercase tracking-widest">A-Z List: 01-{petsData.length < 10 ? `0${petsData.length}` : petsData.length}</span>
         </div>
       </footer>
     </div>
