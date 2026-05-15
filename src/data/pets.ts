@@ -350,5 +350,299 @@ export const petsData: PetData[] = [
       { name: 'Blue Cross - Rat Care', url: 'https://www.bluecross.org.uk/advice/rat/caring-for-your-rat' },
       { name: 'AFRMA (American Fancy Rat and Mouse Association)', url: 'https://www.afrma.org/' }
     ]
+  },
+  {
+    id: 'hedgehog',
+    name: 'African Pygmy Hedgehog',
+    scientificName: 'Atelerix albiventris',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/7/72/Igel.JPG',
+    quickSummary: 'Solitary, nocturnal insectivores that can be prickly but endearing when socialized.',
+    lifespan: '4 - 6 years',
+    setupCost: 'Medium',
+    experienceLevel: 'Intermediate',
+    interactionLevel: 'Low',
+    pros: [
+      'Quiet and mostly active at night',
+      'Do not require another hedgehog for company (strictly solitary)',
+      'Fascinating defensive behaviors and generally cute appearance',
+      'Low daily time commitment compared to a dog or cat'
+    ],
+    cons: [
+      'Require strict temperature control (74-80°F) to prevent fatal hibernation attempts',
+      'Can be very defensive and require patience to socialize to handling',
+      'Prone to Wobbly Hedgehog Syndrome (neurological disease) and cancers',
+      'Suffer from poor eyesight and can be easily startled'
+    ],
+    careRequirements: {
+      housing: 'A large, single-level cage (minimum 4-8 square feet) with solid flooring. Need a high-quality solid-surface exercise wheel (no wire wheels), and a temperature-controlled heating setup (ceramic heat emitter + thermostat).',
+      diet: 'High-protein, low-fat kibble (high-quality cat food or specialized hedgehog food) supplemented with live insects like worms.',
+      healthAndMaintenance: 'Needs wheel and enclosure spot-cleaned daily as they poop while running. Require occasional nail trimmings and feet baths.'
+    },
+    lifestyleSuitability: 'Best for night owls who want a unique, solitary pet and can strictly manage room temperatures. Not ideal for loud environments or very young children.',
+    reputableSources: [
+      { name: 'Hedgehog Welfare Society', url: 'https://www.hedgehogwelfare.org/' },
+      { name: 'RSPCA - Hedgehogs', url: 'https://www.rspca.org.uk/adviceandwelfare/pets/other/africanpygmyhedgehogs' }
+    ]
+  },
+  {
+    id: 'pigeon',
+    name: 'Pigeon (Rock Dove)',
+    scientificName: 'Columba livia',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/10/Columba_livia_%28Rock_Dove%2C_wild%29%2C_Duncansby_Head%2C_Caithness%2C_Scotland_1.jpg',
+    quickSummary: 'Incredibly gentle, smart, and domestic birds that make surprisingly wonderful indoor pets.',
+    lifespan: '10 - 15 years',
+    setupCost: 'Low',
+    experienceLevel: 'Beginner',
+    interactionLevel: 'High',
+    pros: [
+      'One of the only truly domesticated bird species; deeply bonded to humans',
+      'Do not bite hard, very peaceful and docile',
+      'Can wear "flyers" (bird diapers) to freely roam the house safely',
+      'Quiet cooing instead of loud shrieking like parrots'
+    ],
+    cons: [
+      'Need lots of out-of-cage time and social interaction',
+      'Can be messy; constantly shed feather dust',
+      'Pigeon-specific veterinary care can be hard to find',
+      'Many people have a negative stigma against them'
+    ],
+    careRequirements: {
+      housing: 'A large dog crate or a custom flight cage is ideal, with flat shelves to rest on rather than round perches. Provide supervised free-flight in a safe indoor room.',
+      diet: 'A high-quality dove or pigeon seed mix with added grains, legumes, and pigeon grit for digestion. Need deep water dishes to submerge their beaks when drinking.',
+      healthAndMaintenance: 'Need a heavy bath dish for bathing. Keep areas clean of dust. Monitor for respiratory issues or crop infections.'
+    },
+    lifestyleSuitability: 'Perfect for someone wanting a highly affectionate, dog-like bird without the extreme noise or destructive biting of a parrot.',
+    reputableSources: [
+      { name: 'Palomacy Pigeon & Dove Rescue', url: 'https://www.pigeonrescue.org/' }
+    ]
+  },
+  {
+    id: 'budgerigar',
+    name: 'Budgerigar (Parakeet)',
+    scientificName: 'Melopsittacus undulatus',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/4/4a/Budgerigar-male-strzelecki-qld.jpg',
+    quickSummary: 'Small, intelligent, and highly social flock birds with big personalities and chatter.',
+    lifespan: '5 - 10 years',
+    setupCost: 'Medium',
+    experienceLevel: 'Beginner',
+    interactionLevel: 'Medium',
+    pros: [
+      'Can be excellent talkers if trained patiently',
+      'Very active, playful, and entertaining to watch',
+      'Can bond strongly with owners if handled from a young age',
+      'Relatively inexpensive to acquire initially'
+    ],
+    cons: [
+      'Extremely social, highly recommended to keep in pairs if you are away often',
+      'Constant chattering and chirping can be annoying to some',
+      'Very messy, throwing seed hulls and feathers outside the cage continually',
+      'Prone to tumors and frequently hide illnesses until it\'s too late'
+    ],
+    careRequirements: {
+      housing: 'A wide flight cage (rather than tall) to allow horizontal flying. Use natural wood perches of varying diameters. Must have plenty of shreddable toys.',
+      diet: 'Should ideally be converted to a high-quality pellet diet supplemented heavily with fresh safe vegetables (chop) and minimal seeds as treats.',
+      healthAndMaintenance: 'Daily water and food changes. Need a shallow bath. Toxic fumes (Teflon pans, aerosols) will kill them instantly.'
+    },
+    lifestyleSuitability: 'Good for lively households wanting active birds. Requires owners willing to tolerate constant noise and daily mess sweeping.',
+    reputableSources: [
+      { name: 'RSPCA - Budgies', url: 'https://www.rspca.org.uk/adviceandwelfare/pets/birds/budgies' }
+    ]
+  },
+  {
+    id: 'guinea-pig',
+    name: 'Guinea Pig',
+    scientificName: 'Cavia porcellus',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/3/30/George_the_amazing_guinea_pig.jpg',
+    quickSummary: 'Gentle, vocal herbivores that are great for children but need large horizontal spaces.',
+    lifespan: '5 - 8 years',
+    setupCost: 'Medium',
+    experienceLevel: 'Beginner',
+    interactionLevel: 'High',
+    pros: [
+      'Very vocal, "wheeking" for food and attention',
+      'Rarely bite and are very docile',
+      'Awake largely during the day (diurnal)',
+      'Highly interactive and entertaining to hand-feed'
+    ],
+    cons: [
+      'Must be kept in pairs or small herds; they are highly social',
+      'Produce a massive amount of poop daily',
+      'Very timid initially and requires patience to build trust',
+      'Require continuous access to hay, which can trigger human allergies'
+    ],
+    careRequirements: {
+      housing: 'Cannot use standard small pet store cages. Minimum 7.5 to 10.5+ square feet of single-level flat space (like a C&C Cage). Safe bedding (fleece or paper).',
+      diet: 'Unlimited high-quality timothy or orchard grass hay. 1/8 cup high-quality plain pellets daily. 1 cup fresh veggies daily (especially bell peppers for Vitamin C). Cannot synthesize their own Vitamin C.',
+      healthAndMaintenance: 'Daily spot cleaning required. Need monthly nail trimmings. Health issues to watch include respiratory illnesses and scurvy if diet is poor.'
+    },
+    lifestyleSuitability: 'Great family pets for those who have horizontal floor/table space to spare and who understand the daily cleaning required.',
+    reputableSources: [
+      { name: 'Guinea Lynx', url: 'https://www.guinealynx.info/' },
+      { name: 'RSPCA - Guinea Pigs', url: 'https://www.rspca.org.uk/adviceandwelfare/pets/rodents/guineapigs' }
+    ]
+  },
+  {
+    id: 'fancy-mouse',
+    name: 'Fancy Mouse',
+    scientificName: 'Mus musculus domestica',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/a/a4/Fancy_Mouse.jpg',
+    quickSummary: 'Tiny, busy, and inexpensive pets that are fun to observe but fragile to handle.',
+    lifespan: '1 - 2 years',
+    setupCost: 'Low',
+    experienceLevel: 'Beginner',
+    interactionLevel: 'Low',
+    pros: [
+      'Low cost to acquire and maintain',
+      'Fun to watch them climb and explore complex setups',
+      'Females can be kept in highly social, entertaining groups',
+      'Require minimal space compared to most other pets'
+    ],
+    cons: [
+      'Very short lifespans (often 12-18 months)',
+      'Male mice have a very strong, musky odor that is difficult to mask',
+      'Very fast and fragile, tough for young children to handle safely',
+      'Extremely prone to tumors and respiratory issues'
+    ],
+    careRequirements: {
+      housing: 'A 10 to 20-gallon long glass aquarium with a secure mesh lid. Must have deep bedding for burrowing, climbing toys, and a solid-surface exercise wheel (no wire).',
+      diet: 'High-quality commercial mouse blocks/pellets as a base, supplemented lightly with safe seeds, grains, and tiny pieces of veggies.',
+      healthAndMaintenance: 'Strict cage cleaning is needed to prevent ammonia buildup from urine, which triggers respiratory disease. Must clean males’ cages more frequently but leave small amounts of scent behind so they don\'t over-mark.'
+    },
+    lifestyleSuitability: 'An entry-level pet for someone wanting low physical interaction but an engaging observational experience.',
+    reputableSources: [
+      { name: 'RSPCA - Mice', url: 'https://www.rspca.org.uk/adviceandwelfare/pets/rodents/mice' }
+    ]
+  },
+  {
+    id: 'parrot',
+    name: 'Parrot (e.g., African Grey)',
+    scientificName: 'Psittacus erithacus',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/3/3c/Perroquet_%C3%A0_Yampopo_Beach_-_Douala.jpg',
+    quickSummary: 'Exceptionally intelligent, long-lived birds with complex emotional and mental needs.',
+    lifespan: '40 - 60+ years',
+    setupCost: 'Very High',
+    experienceLevel: 'Advanced',
+    interactionLevel: 'High',
+    pros: [
+      'Incredible cognitive abilities; can learn words in context and perform complex tasks',
+      'Deeply bond with their owners, often choosing a favorite',
+      'Highly engaging and conversational',
+      'Fascinating, beautiful, and emotionally complex animals'
+    ],
+    cons: [
+      'Requires a monumental time commitment (hours of daily interaction)',
+      'Can be extremely loud, prone to screaming if bored',
+      'Can develop destructive behaviors (feather plucking, serious biting) if neglected',
+      'Outlive many owners, requiring estate planning'
+    ],
+    careRequirements: {
+      housing: 'A massive, sturdy avian enclosure. Must be given extensive hours of supervised out-of-cage time in a bird-proofed room with foraging stations.',
+      diet: 'A diverse, high-quality pellet-based diet combined heavily with fresh vegetable chop, sprouted seeds, and minimal fruit/nuts. Avoid all-seed diets.',
+      healthAndMaintenance: 'Need specialized avian vets. Extremely sensitive respiratory systems (no Teflon, candles, incense, perfumes). Require constant intellectual stimulation by rotating diverse toys.'
+    },
+    lifestyleSuitability: 'Only for deeply committed individuals who are ready to make a lifestyle change to accommodate what is essentially a flying toddler for the next 50 years.',
+    reputableSources: [
+      { name: 'Lafeber Company - African Grey', url: 'https://lafeber.com/pet-birds/species/african-grey-parrot/' },
+      { name: 'World Parrot Trust', url: 'https://www.parrots.org/' }
+    ]
+  },
+  {
+    id: 'hamster',
+    name: 'Hamster (Syrian)',
+    scientificName: 'Mesocricetus auratus',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Golden_hamster_front_1.jpg',
+    quickSummary: 'Strictly solitary, nocturnal burrowers that require surprisingly large enclosures.',
+    lifespan: '2 - 3 years',
+    setupCost: 'Low',
+    experienceLevel: 'Beginner',
+    interactionLevel: 'Medium',
+    pros: [
+      'Strictly solitary; you do not need to buy two',
+      'Generally easy to tame and handle if approached correctly',
+      'Cute, chubby appearance with entertaining cheek-pouching behaviors',
+      'Relatively low maintenance and inexpensive'
+    ],
+    cons: [
+      'Fully nocturnal; may not wake up until late into the night',
+      'Often sold with unethically small cages; require much larger tanks',
+      'Short lifespans',
+      'Female Syrians can be notoriously hard to satisfy with cage size and may exhibit stress behaviors'
+    ],
+    careRequirements: {
+      housing: 'Minimum 40-gallon breeder aquarium or 800+ sq in of continuous floor space. Need 6-10+ inches of safe bedding for deep burrowing. Require an appropriately sized 10+ inch upright wheel to prevent back damage.',
+      diet: 'High-quality seed mix containing varied grains and proteins, alongside commercial pellets. Occasional fresh veggie treats.',
+      healthAndMaintenance: 'Need a sand bath for grooming. Spot clean toilet corners every few days; avoid fully replacing all bedding at once to reduce scent stress.'
+    },
+    lifestyleSuitability: 'Good for night-owls or older children who can respect the animal’s sleep schedule and interact with them in the evening.',
+    reputableSources: [
+      { name: 'RSPCA - Hamsters', url: 'https://www.rspca.org.uk/adviceandwelfare/pets/rodents/hamsters' },
+      { name: 'California Hamster Association', url: 'https://californiahamsterassociation.com/' }
+    ]
+  },
+  {
+    id: 'dog',
+    name: 'Dog',
+    scientificName: 'Canis lupus familiaris',
+    imageUrl: 'https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    quickSummary: 'Deeply loyal, energetic companions that seamlessly integrate into active family life.',
+    lifespan: '10 - 15 years',
+    setupCost: 'High',
+    experienceLevel: 'Beginner',
+    interactionLevel: 'High',
+    pros: [
+      'Ultimate companions; emotionally supportive and deeply affectionate',
+      'Highly trainable and eager to please',
+      'Encourage a healthy, active lifestyle for owners',
+      'Can travel, hike, and participate in human activities'
+    ],
+    cons: [
+      'High daily time commitment (training, walking, potty breaks)',
+      'Can be very expensive (vet care, food, boarding, training)',
+      'Require significant lifestyle adjustment (cannot easily leave for spontaneous weekend trips)',
+      'Prone to separation anxiety and destructive behavior if under-exercised'
+    ],
+    careRequirements: {
+      housing: 'Indoor living as part of the family. May need a crate for training or a secure fenced yard for exercise. Cannot be left outside permanently.',
+      diet: 'High-quality, WSAVA-compliant commercial dog food appropriate for their age, size, and activity level.',
+      healthAndMaintenance: 'Daily exercise (walks/play). Regular veterinary care (vaccines, heartworm prevention, dental care). Grooming needs vary vastly by breed.'
+    },
+    lifestyleSuitability: 'Excellent for active individuals or families with the time and resources to integrate a pet into almost every aspect of their daily routine.',
+    reputableSources: [
+      { name: 'AKC - Dog Care', url: 'https://www.akc.org/expert-advice/care/' },
+      { name: 'ASPCA - Dogs', url: 'https://www.aspca.org/pet-care/dog-care' }
+    ]
+  },
+  {
+    id: 'cat',
+    name: 'Cat',
+    scientificName: 'Felis catus',
+    imageUrl: 'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    quickSummary: 'Independent but deeply affectionate predators that thrive well in indoor environments.',
+    lifespan: '12 - 18+ years',
+    setupCost: 'Medium',
+    experienceLevel: 'Beginner',
+    interactionLevel: 'High',
+    pros: [
+      'Highly independent; do not need to be taken outside for potty breaks',
+      'Very affectionate on their own terms',
+      'Excellent for apartment living or smaller spaces',
+      'Keep themselves incredibly clean via self-grooming'
+    ],
+    cons: [
+      'Litter boxes require daily scooping and can trap odors if neglected',
+      'Naturally need to scratch; can damage furniture if not provided alternatives',
+      'Shedding and high-allergen potential for many people',
+      'Can wake you up early in the morning for food or play'
+    ],
+    careRequirements: {
+      housing: 'Indoor living highly recommended to keep them and local wildlife safe. Need vertical space (cat trees), scratching posts, and clean, accessible litter boxes (1 per cat + 1).',
+      diet: 'Obligate carnivores. High-protein wet/dry commercial cat food. Ensure adequate hydration as they are prone to kidney issues.',
+      healthAndMaintenance: 'Annual veterinary checkups, vaccinations, and preventative care. Dental cleanings often required later in life. Daily play sessions to satisfy hunting instincts.'
+    },
+    lifestyleSuitability: 'Perfect for working professionals, apartment dwellers, or anyone wanting a loving companion without the intense outdoor exercise demands of a dog.',
+    reputableSources: [
+      { name: 'ASPCA - Cats', url: 'https://www.aspca.org/pet-care/cat-care' },
+      { name: 'Cornell Feline Health Center', url: 'https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center' }
+    ]
   }
 ];
