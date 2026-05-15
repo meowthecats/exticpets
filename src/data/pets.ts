@@ -316,5 +316,39 @@ export const petsData: PetData[] = [
       { name: 'Dubia.com - Schneider’s Skink Care Sheet', url: 'https://dubia.com/blogs/lizard-care/schneider-s-skink-care-sheet' },
       { name: 'ReptileSupply - How to care for a Schneider\'s Skink', url: 'https://reptilesupply.com/blogs/care-sheets/how-to-care-for-your-schneiders-skink' }
     ]
+  },
+  {
+    id: 'fancy-rat',
+    name: 'Fancy Rat',
+    scientificName: 'Rattus norvegicus domestica',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Lyonblackandwhitehoodedrat.jpg',
+    quickSummary: 'Highly intelligent, incredibly social, and affectionate rodents often described as "pocket dogs."',
+    lifespan: '2 - 3 years',
+    setupCost: 'Low',
+    experienceLevel: 'Beginner',
+    interactionLevel: 'High',
+    pros: [
+      'Very affectionate and bond strongly with their owners',
+      'Highly intelligent and capable of learning complex tricks',
+      'Generally very docile and rarely bite',
+      'Relatively cheap to purchase and care for daily'
+    ],
+    cons: [
+      'Heartbreakingly short lifespans (2-3 years)',
+      'Extremely prone to respiratory infections and tumors (high vet bills later in life)',
+      'Can be odor-heavy if cages are not cleaned meticulously',
+      'MUST be kept in pairs or groups; a solitary rat will become depressed'
+    ],
+    careRequirements: {
+      housing: 'A large, multi-level wire cage (e.g., Critter Nation) providing at least 2-2.5 cubic feet per rat. Needs solid flooring, hammocks, ropes, and plenty of climbing enrichment.',
+      diet: 'A high-quality lab block (e.g., Oxbow Essentials) should form the core diet, supplemented daily with fresh vegetables, fruits, and occasional proteins (egg, chicken).',
+      healthAndMaintenance: 'Must handle gently daily. Cage needs full deep-cleaning weekly with daily spot cleaning. Veterinary care often requires Exotics specialization.'
+    },
+    lifestyleSuitability: 'Perfect for someone wanting a highly interactive, dog-like pet but in a smaller package. They require significant daily interaction and out-of-cage playtime.',
+    reputableSources: [
+      { name: 'RSPCA - Pet Rats', url: 'https://www.rspca.org.uk/adviceandwelfare/pets/rodents/rats' },
+      { name: 'Blue Cross - Rat Care', url: 'https://www.bluecross.org.uk/advice/rat/caring-for-your-rat' },
+      { name: 'AFRMA (American Fancy Rat and Mouse Association)', url: 'https://www.afrma.org/' }
+    ]
   }
 ];
